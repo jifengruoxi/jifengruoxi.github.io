@@ -1,0 +1,41 @@
+baseURL: https://example.org/
+locale: zh-cn
+title: 我的博客
+theme: ananke
+
+# 网站参数
+params:
+  description: "一个用 Hugo 搭建的个人博客"
+  author: "博主"
+  # Ananke 主题配置
+  site_logo: ""
+  facebook: ""
+  twitter: ""
+  instagram: ""
+  youtube: ""
+  github: ""
+  linkedin: ""
+  email: ""
+
+# 菜单配置
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 20
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 30
+
+# 文章配置
+permalinks:
+  posts: /posts/:year/:month/:day/:slug/
+
+# 分页
+paginate: 10
