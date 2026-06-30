@@ -1,41 +1,145 @@
-baseURL: https://example.org/
-locale: zh-cn
+# ─────────────────────────────────────────────
+# 站点基础信息（模仿 CGLab 风格）
+# ─────────────────────────────────────────────
+baseURL: https://jifengruoxi.github.io
 title: 我的博客
-theme: ananke
+description: " "
+author: 博主
+defaultContentLanguage: zh-cn
 
-# 网站参数
-params:
-  description: "一个用 Hugo 搭建的个人博客"
-  author: "博主"
-  # Ananke 主题配置
-  site_logo: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
-  youtube: ""
-  github: ""
-  linkedin: ""
-  email: ""
+# 主题
+theme: PaperMod
 
-# 菜单配置
+# 版权页脚（CGLab 用 CC BY-NC-ND 4.0）
+copyright: "© 2026 博主。本站原创内容除特别声明外，采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans) 许可协议。"
+
+# 永久链接：与 CGLab 一致的 /posts/section/slug/ 结构
+permalinks:
+  posts: /posts/:sections/:slugorcontentbasename/
+
+# 分页
+pagination:
+  pagerSize: 10
+
+# 菜单（顶部导航）
 menu:
   main:
-    - identifier: home
-      name: 首页
-      url: /
+    - identifier: study
+      name: 学习
+      url: /study/
       weight: 10
-    - identifier: about
-      name: 关于
-      url: /about/
-      weight: 20
     - identifier: posts
       name: 文章
       url: /posts/
+      weight: 20
+    - identifier: whisper
+      name: 碎碎念
+      url: /whisper/
       weight: 30
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 40
 
-# 文章配置
-permalinks:
-  posts: /posts/:year/:month/:day/:slug/
+# ─────────────────────────────────────────────
+# PaperMod 主题参数
+# ─────────────────────────────────────────────
+params:
+  # 主题色（CGLab 深色 #2e2e33）
+  theme-color: "#2e2e33"
 
-# 分页
-paginate: 10
+  # 环境标识
+  env: production
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: false
+  hideMeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  UseHugoToc: true
+
+  # 首页：简洁欢迎语
+  homeInfoParams:
+    Title: ""
+    Content: >
+      欢迎来到我的博客！
+
+  # 社交图标
+  socialIcons:
+    - name: github
+      url: "https://github.com/jifengruoxi"
+    - name: email
+      url: "mailto:you@example.com"
+
+  # 编辑链接（可选）
+  editPost:
+    URL: ""
+    Text: ""
+
+  # 网站 SEO
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  # 顶部 logo 文字
+  label:
+    text: "我的博客"
+
+  # 文章封面图支持
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+# ─────────────────────────────────────────────
+# 模块/扩展：通过 theme mounts 引入 KaTeX
+# CGLab 用 KaTeX 渲染数学公式
+# 这里使用 hugo-mod-third-party-rss 等可选；
+# KaTeX 通过自定义 layouts 直接引入（见 layouts/partials/extend_head.html）
+# ─────────────────────────────────────────────
+
+# 输出格式：开启 search 需要 JSON
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # 必须，否则搜索页无数据
+
+# 解析 Markdown 渲染
+markup:
+  highlight:
+    style: github
+    lineNos: false
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\\[', '\\]'], ['$$', '$$']]
+          inline: [['\\(', '\\)'], ['$'  , '$'  ]]
+        enable: true
+
+# 隐私相关
+privacy:
+  vimeo:
+    disabled: true
+  youtube:
+    disabled: true
+
+# 服务
+services:
+  rss:
+    limit: 10

@@ -1,0 +1,19 @@
+{{/* 模仿 CGLab 风格：在 head 中引入 KaTeX 用于数学公式渲染 */ -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof renderMathInElement !== 'function') return;
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$',  right: '$$',  display: true  },
+        { left: '$',   right: '$',   display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true  }
+      ],
+      throwOnError: false,
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    });
+  });
+</script>

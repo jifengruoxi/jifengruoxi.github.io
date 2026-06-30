@@ -1,0 +1,183 @@
+/* ============================================================
+   我的博客 - 自定义美化样式
+   在 PaperMod 基础上微调，参考 CGLab 风格
+   ============================================================ */
+
+/* —— 主题色变量覆盖（CGLab 风：深色 + 青色强调）—— */
+:root {
+  --theme: #2e2e33;            /* 主题主色（移动端浏览器顶栏） */
+  --primary: #5ab4f0;          /* 强调色：链接 / 主按钮 */
+  --entry: #ffffff;            /* 卡片背景（亮色） */
+  --border: #e8e8e8;
+  --secondary: #6c6c6c;
+  --transition: 0.25s ease;
+}
+
+/* 暗色模式配色 */
+[data-theme="dark"] {
+  --primary: #6cc4f5;
+  --entry: #2e2e33;
+  --border: #3a3a42;
+  --secondary: #9a9aa2;
+}
+
+/* —— 全局字体与行高微调 —— */
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* —— 链接交互更柔和 —— */
+a {
+  transition: color var(--transition), opacity var(--transition);
+}
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* —— 顶部导航栏微调 —— */
+.logo, .logo a {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+#menu a span {
+  transition: color var(--transition);
+}
+#menu a:hover span {
+  color: var(--primary);
+}
+
+/* —— 首页 home-info 卡片美化 —— */
+.first-entry {
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+}
+.first-entry .entry-content {
+  font-size: 1.15rem;
+  color: var(--secondary);
+}
+/* 首页头像：圆形 + 柔和阴影 + 缓动放大 */
+.first-entry .entry-content img {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.first-entry .entry-content img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* —— 文章列表卡片 —— */
+.post-entry {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  margin: 1.2rem 0;
+}
+.post-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary);
+}
+[data-theme="dark"] .post-entry:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* —— 文章标题悬浮变色 —— */
+.entry-header h2 {
+  transition: color var(--transition);
+}
+.post-entry:hover .entry-header h2 {
+  color: var(--primary);
+}
+
+/* —— 文章正文排版优化 —— */
+.post-content {
+  line-height: 1.85;
+}
+.post-content p {
+  margin: 1.1em 0;
+}
+/* 标题前留白 */
+.post-content h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+.post-content h3 {
+  margin-top: 1.6em;
+}
+
+/* —— 代码块圆角 + 柔和阴影 —— */
+.post-content pre {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.post-content :not(pre) > code {
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+/* —— 引用块美化 —— */
+.post-content blockquote {
+  border-left: 3px solid var(--primary);
+  margin: 1.4em 0;
+  padding: 0.4em 1.1em;
+  color: var(--secondary);
+  background: rgba(90, 180, 240, 0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+/* —— 表格圆角边框 —— */
+.post-content table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.post-content th {
+  background: rgba(90, 180, 240, 0.1);
+}
+
+/* —— 回到顶部按钮 —— */
+.top-link {
+  transition: visibility var(--transition), opacity var(--transition), transform var(--transition);
+}
+.top-link:hover {
+  transform: translateY(-3px);
+}
+
+/* —— 页脚分隔更清晰 —— */
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+/* —— KaTeX 块级公式居中 + 适度留白 —— */
+.katex-display {
+  margin: 1.4em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2em 0;
+}
+
+/* —— 列表页标题（学习/文章/碎碎念）更醒目 —— */
+.tag-entry .entry-header,
+.list .entry-header h1 {
+  font-weight: 600;
+}
+
+/* —— 移动端适配 —— */
+@media (max-width: 768px) {
+  .first-entry {
+    padding: 1.2rem 0.5rem 1.8rem;
+  }
+  .first-entry .entry-content img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .post-content {
+    line-height: 1.75;
+  }
+}
