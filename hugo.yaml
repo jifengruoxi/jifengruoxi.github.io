@@ -1,10 +1,7 @@
-# ─────────────────────────────────────────────
-# 站点基础信息（模仿 CGLab 风格）
-# ─────────────────────────────────────────────
 baseURL: https://jifengruoxi.github.io
 title: 我的博客
 description: " "
-author: 博主
+author: jifengruoxi
 defaultContentLanguage: zh-cn
 
 # 主题
