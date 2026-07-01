@@ -1,3 +1,15 @@
+---
+title: "我的博客搭建之旅"
+date: 2026-07-01T15:00:00+08:00
+draft: false
+tags:
+  - hugo
+  - github-pages
+categories:
+  - 技术
+description: "用 Hugo 与 GitHub Pages 记录成长"
+---
+
 # 我的博客搭建之旅：用 Hugo 与 GitHub Pages 记录成长
 
 ## 为什么选择 Hugo + GitHub Pages
