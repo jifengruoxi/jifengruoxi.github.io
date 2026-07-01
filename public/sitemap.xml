@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jifengruoxi.github.io/categories/</loc>
+    <loc>http://localhost:10429/categories/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/tags/github-pages/</loc>
+    <loc>http://localhost:10429/tags/github-pages/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/tags/hugo/</loc>
+    <loc>http://localhost:10429/tags/hugo/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/tags/</loc>
+    <loc>http://localhost:10429/tags/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://localhost:10429/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://localhost:10429/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/posts/</loc>
+    <loc>http://localhost:10429/posts/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/</loc>
+    <loc>http://localhost:10429/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/posts/posts/my-first-post/</loc>
+    <loc>http://localhost:10429/posts/posts/my-first-post/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jifengruoxi.github.io/about/</loc>
+    <loc>http://localhost:10429/about/</loc>
   </url><url>
-    <loc>https://jifengruoxi.github.io/whisper/</loc>
+    <loc>http://localhost:10429/whisper/</loc>
   </url><url>
-    <loc>https://jifengruoxi.github.io/study/</loc>
+    <loc>http://localhost:10429/study/</loc>
   </url>
 </urlset>

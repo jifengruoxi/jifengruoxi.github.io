@@ -4,6 +4,7 @@ date: 2026-06-30
 description: "从零开始搭建个人独立博客的全过程记录"
 tags: ["Hugo", "GitHub Pages", "博客"]
 categories: ["技术"]
+author: "jifengruoxi"
 ---
 
 ## 为什么选择 Hugo + GitHub Pages

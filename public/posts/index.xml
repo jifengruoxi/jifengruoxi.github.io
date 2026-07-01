@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>文章 on 我的博客</title>
-    <link>https://jifengruoxi.github.io/posts/</link>
+    <link>http://localhost:10429/posts/</link>
     <description>Recent content in 文章 on 我的博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>2026 博主。本站原创内容除特别声明外，采用 CC BY-NC-ND 4.0 许可协议。</copyright>
     <lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jifengruoxi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:10429/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的博客搭建之旅：用 Hugo 与 GitHub Pages 记录成长</title>
-      <link>https://jifengruoxi.github.io/posts/posts/my-first-post/</link>
+      <link>http://localhost:10429/posts/posts/my-first-post/</link>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://jifengruoxi.github.io/posts/posts/my-first-post/</guid>
+      <guid>http://localhost:10429/posts/posts/my-first-post/</guid>
       <description>从零开始搭建个人独立博客的全过程记录</description>
     </item>
   </channel>
