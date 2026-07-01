@@ -1,0 +1,39 @@
+/* 文章卡片样式 */
+.post-entry {
+  background: var(--entry);
+  border-radius: 14px !important;
+  padding: 24px 28px !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 第一篇特殊样式 */
+.first-entry {
+  border-radius: 18px !important;
+  padding: 32px 36px !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.first-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 保持图片圆角 */
+.post-entry .entry-cover img,
+.first-entry .entry-cover img {
+  border-radius: 10px;
+}
+
+/* 标签页面卡片间距 */
+.tag-entry {
+  margin-bottom: 12px;
+}
