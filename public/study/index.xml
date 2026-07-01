@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>学习 on 我的博客</title>
+    <link>https://jifengruoxi.github.io/study/</link>
+    <description>Recent content in 学习 on 我的博客</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>2026 博主。本站原创内容除特别声明外，采用 CC BY-NC-ND 4.0 许可协议。</copyright>
+    <atom:link href="https://jifengruoxi.github.io/study/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
