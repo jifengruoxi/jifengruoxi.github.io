@@ -1,10 +1,18 @@
-
+---
+title: "题库HTML处理办法"
+date: 2026-07-02T23:10:00+08:00
+draft: true
+tags:
+  - 题库
+categories:
+  - 技术
+description: "处理题库HTML的笔记"
+---
 
 先拿到原材料
 让他剔除错误选项 去掉重复选项 
 这个初版之后再拿到AI里面去随机抽一定数量题，判断正确率和重复率
 下一步是丢到再打包成apk（注意标签v1＋v2）
-
 
 
 cluade code配置deep v4成本极低
