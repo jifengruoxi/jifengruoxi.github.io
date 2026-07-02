@@ -9,3 +9,5 @@
 
 cluade code配置deep v4成本极低
 
+
+![示例图片](/default.jpg)
