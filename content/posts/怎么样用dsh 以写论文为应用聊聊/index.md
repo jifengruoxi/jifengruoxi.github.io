@@ -11,8 +11,6 @@ categories:
 description: "从下载、配置 API Key 到管理工作区，用 DSH 写论文的完整上手流程"
 ---
 
-# 怎么样用 dsh：以写论文为应用聊聊
-
 以写论文为例，聊聊怎么用 dsh 和电脑一起干活。
 
 ## 一、下载 dsh
