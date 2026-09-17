@@ -10,8 +10,6 @@ categories:
 description: "用 Hugo 与 GitHub Pages 记录成长"
 ---
 
-# 我的博客搭建之旅：用 Hugo 与 GitHub Pages 记录成长
-
 ## 为什么选择 Hugo + GitHub Pages
 
 在信息爆炸的时代，拥有一个属于自己的独立博客，不仅是技术能力的展示，更是沉淀思考、记录成长的绝佳方式。经过一番调研，我最终选择了 **Hugo** 搭配 **GitHub Pages** 的方案。
